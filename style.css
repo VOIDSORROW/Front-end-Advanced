@@ -1,0 +1,190 @@
+*{
+    font-family: 'Segoe UI';
+}
+
+/* ---------------Navbar---------------- */
+
+.navbar{
+    margin: 0 auto;
+    height: 70px;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 100vw;
+    width: 100%;
+
+
+    border-radius: 50px;
+
+    background-color:rgba(150, 189, 231, 0.286);
+
+    align-items: center;
+    justify-content: space-evenly;
+}   
+
+.logo{
+    padding: 5px;
+    /* display: flex; */
+    /* max-width: 20%;
+    max-height: 40px; */
+
+    align-items: center;
+}
+
+.logo a{
+    display: inline-block;
+    /* max-width:200px; */
+    height: 40px;
+}
+
+
+.logo a img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu ul li{
+    
+    padding: 5px;
+
+    display: inline;
+    list-style: none;
+}
+
+.menu ul li a{
+    font-weight:600;
+    text-decoration: none;
+    /* color:rgba(213, 65, 60, 0.855); */
+    color: orangered;
+    /* color:rgb(29, 110, 177); */
+}
+
+.menu ul li a:hover{
+    font-weight:600;
+    text-decoration: none;
+    color:rgb(29, 110, 177);
+    /* color:rgba(213, 65, 60, 0.855); */
+}
+
+.butt-on button{
+    /* padding: 10px; */
+    line-height: 30px;
+    border: transparent;
+    border-radius: 50px;
+
+    color: white;
+    background-color: orangered;
+}
+
+.butt-on button:hover{
+    background-color:rgb(29, 110, 177);
+    transition: 1s all; 
+}
+
+/* ----------------Banner--------------- */
+
+
+.banner{
+    background-image: url(hero-image.jpg);
+    background-size: cover;
+}
+
+.outer-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    align-items: center;
+}
+
+.banner-wrapper{
+    margin: 0;
+    padding-top: 50px;
+    /* padding-left: 150px; */
+    padding-left: 10%;
+}
+
+.banner-logo{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100%;
+}
+
+.banner-logo img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner-content{
+    font-size: 20px;
+}
+
+.banner-button a{
+    position: relative;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.banner-button a:before {
+    content: "\f061";
+    position: absolute;
+    top: auto;
+    left: 110px;
+    right: auto;
+    bottom: 0;
+    font-family:fontawesome;
+}
+
+.banner-button a:after{
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: -4px;
+    width: 105px;
+    height:2px;
+    background-color: black;
+}
+
+.banner2-outer-container{
+    padding: 5%;
+}
+
+.banner2-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.side-image{
+    max-width: 670px;
+}
+
+.side-image img{
+    /* min-width: 670px; */
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cont{
+    max-width: 530px;
+}
+
+.text-cont{
+    line-height: 30px;
+    /* font-size: 1rem; */
+}
