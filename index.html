@@ -6,15 +6,16 @@
     <title>Header Practice</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="container">
                 <div class="logo">
-                    <a href="#something1"><img src="sap-silver-partner.png"></a>
+                    <a href="#something1"><img src="assets/sap-silver-partner.png"></a>
 
-                    <a href="#something2"><img src="Website-Header-Logo-1-1.png"></a>
+                    <a href="#something2"><img src="assets/Website-Header-Logo-1-1.png"></a>
                 </div>
 
                 <div class="menu">
@@ -39,7 +40,7 @@
             <div class="banner-wrapper">
 
                 <div class="banner-logo">
-                    <img src="sap-silver-partner.png">
+                    <img src="assets/sap-silver-partner.png">
                 </div>
 
                 <div class="banner-content">
@@ -64,46 +65,47 @@
 
 
     <section class="banner2">
-        <div class="banner2-outer-container">
 
+        <div class="banner2-parent">
             <div class="banner2-wrapper">
-
-                <div class="side-image">
-                    <img src="hero 2 image.png" alt="banner2-image">
-                </div>
-    
-                <div class="cont">
-
-                    <div class="heads">
-                        <h2><span style="color: red;">About&nbsp;</span>Delmon Group</h2>
+                <div class="image-container">
+                    <div class="side-image">
+                        <img src="assets/hero 2 image.png">
                     </div>
-                    <div class="text-cont">
-    
-                        <p>Delmon Group of Companies is one of the major emergent
-                            manufacturing, engineering, trading and marketing group with its
-                            Head Quarters strategically based at the Port and Oil city of
-                            Eastern Province, Dammam in the Kingdom of Saudi Arabia.
-                        </p>
-    
-                        <p>
-                            The group is a part of the Al Ghunaim Brothers Holding headed by
-                            “<span style="color: red;"><b>Mr. Ahmed S. Al Ghunaim</b></span>” an impressive record of undertaking
-                            major contracts and since then, it has had supplies to various 
-                            segments in the market and continues to do so.
-                        </p>
-    
-                    </div>
-                    
                 </div>
 
+                <div class="content-container">
+                    <div class="text-container">
+                        <div class="header-h1">
+                            <h1><span style="color: red;">About&nbsp;</span>Delmon</h1>
+                        </div>
+
+                        <div class="paragraph">
+
+                            <p>Delmon Group of Companies is one of the major emergent
+                                manufacturing, engineering, trading and marketing group 
+                                with its Head Quarters strategically based at the Port and Oil 
+                                city of Eastern Province, Dammam in the Kingdom of 
+                                Saudi Arabia.
+                            </p>
+
+                            <p>The group is a part of the Al Ghunaim Brothers Holding headed by
+                                “<span style="color: red;"><b>Mr. Ahmed S. Al Ghunaim</b></span>” an impressive record of undertaking
+                                major contracts and since then, it has had supplies to various 
+                                segments in the market and continues to do so.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+
     </section>
 
     <!-- Grids -->
 
-    <section class="grid-sect">
+    <!-- <section class="grid-sect">
         <div class="banner3-outer-container">
 
             <div class="banner3-wrapper">
@@ -177,8 +179,93 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
+    <!-- --------------Carousel Section------------------- -->
+
+    <section class="carousel-sect">
+        <div class="carousel-root">
+            <div class="carousel-grid">
+
+                <div class="item1">
+                    <div class="img-container">
+                        <div class="image-div">
+                            <img src="assets/icon1.png">
+                        </div>
+                    </div>
+
+                    <div class="item1-text-content">
+
+                        <div class="h2-tag">
+                            <h2><span style="color: orangered;">Delmon</span> Co Ltd</h2>
+                        </div>
+                        <div class="item1-text-cont">
+                            <p>
+                                Deimon Co Ltd-an affiliate of 
+                                Delmon Group of Companies, is a 
+                                multi-faceted entity with various 
+                                fields of interest						
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="item1">
+                    <div class="img-container">
+                        <div class="image-div">
+                            <img src="assets/icon2.png">
+                        </div>
+                    </div>
+
+                    <div class="item1-text-content">
+
+                        <div class="h2-tag">
+                            <h2><span style="color: orangered;">Delmon</span> Oil & Gas</h2>
+                        </div>
+                        <div class="item1-text-cont">
+                            <p>
+                                Caters to the Petroleum, 
+                                Petrochemical and other support 
+                                Industries with specialized 
+                                products and services						
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="item1">
+                    <div class="img-container">
+                        <div class="image-div">
+                            <img src="assets/icon3.png">
+                        </div>
+                    </div>
+
+                    <div class="item1-text-content">
+
+                        <div class="h2-tag">
+                            <h2><span style="color: orangered;">Delmon</span> Salt Factory</h2>
+                        </div>
+                        <div class="item1-text-cont">
+                            <p>
+                                Quality and reliable salt producer/manufacturers 
+                                and operates the salt mine in 
+                                Qurraya in Eastern Province						
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

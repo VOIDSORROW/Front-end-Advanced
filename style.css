@@ -1,12 +1,29 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI';
+}
+
+*::selection{
+    background-color: rgba(255, 68, 0, 0.352);
+    color: black;
 }
 
 /* ---------------Navbar---------------- */
 
 .navbar{
-    margin: 0 auto;
-    height: 70px;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-height: 80px;
+
+    /* max-width: 1300px; */
+    width: 100%;
+    
+    position: fixed;
+    top: 20px;
 
 }
 
@@ -14,16 +31,21 @@
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 100vw;
+    /* max-width: 100vw; */
+    max-width: 1300px;
     width: 100%;
+    padding: 0 80px;
 
+    margin: 0 auto;
 
+    border: 1px solid orangered;
     border-radius: 50px;
 
-    background-color:rgba(150, 189, 231, 0.286);
+    /* background-color:rgba(231, 185, 150, 0.286); */
+    backdrop-filter: blur(100px) saturate(100%);
 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }   
 
 .logo{
@@ -38,7 +60,7 @@
 .logo a{
     display: inline-block;
     /* max-width:200px; */
-    height: 40px;
+    height: 55px;
 }
 
 
@@ -73,9 +95,9 @@
 }
 
 .butt-on button{
-    /* padding: 10px; */
-    line-height: 30px;
-    border: transparent;
+    padding: 8px 16px;
+    /* line-height: 30px; */
+    border: none;
     border-radius: 50px;
 
     color: white;
@@ -85,13 +107,15 @@
 .butt-on button:hover{
     background-color:rgb(29, 110, 177);
     transition: 1s all; 
+    transform: scale(1.1);
 }
 
 /* ----------------Banner--------------- */
 
 
 .banner{
-    background-image: url(hero-image.jpg);
+    
+    background-image: url(assets/hero-image.jpeg);
     background-size: cover;
 }
 
@@ -100,6 +124,7 @@
     flex-wrap: wrap;
     height: 650px;
     align-items: center;
+
 }
 
 .banner-wrapper{
@@ -124,8 +149,17 @@
 }
 
 .banner-content{
-    font-size: 20px;
+    font-size: 25px;
 }
+
+.H2-content{
+    margin: 10px auto;
+}
+
+.secondary-content{
+    margin: 10px auto;
+}
+
 
 .banner-button a{
     position: relative;
@@ -138,7 +172,7 @@
     content: "\f061";
     position: absolute;
     top: auto;
-    left: 110px;
+    left: 135px;
     right: auto;
     bottom: 0;
     font-family:fontawesome;
@@ -151,14 +185,15 @@
     left: 0;
     right: auto;
     bottom: -4px;
-    width: 105px;
+    width: 130px;
     height:2px;
     background-color: black;
 }
 
-.banner2-outer-container{
-    padding: 5%;
-}
+/* -----------------------Banner2----------------------- */
+
+/* .banner2-parent{
+} */
 
 .banner2-wrapper{
     display: flex;
@@ -166,34 +201,56 @@
 
     width: 100%;
     max-width: 1300px;
+
+    padding: 120px 0;
+
+    margin: 0 auto;
+
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .side-image{
-    max-width: 670px;
-    /* max-width: 51.7%; */
+    /* padding: 40px; */
+    height: 475px;
+
 }
 
 .side-image img{
-    height: auto;
     width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-.cont{
-    max-width: 530px;
-    /* max-width: 48.3%; */
-    /* padding: 5%; */
-    padding:0 0 0 7%;
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
 }
 
-.text-cont{
+.text-container{
     line-height: 30px;
-    text-align: justify;
-    /* font-size: 1rem; */
+    padding: 0 0 0 90px;
 }
+
+.header-h1{
+    margin: 25px auto;
+}
+
+.paragraph p{
+    margin: 25px auto;
+}
+
+
+
+
+
+/* Bannner3 for grids */
 
 .banner3-wrapper{
     display: grid;
@@ -218,5 +275,61 @@
 
 .side-image3{
     display: block;
-    padding: 5%;
+    /* padding: 5%; */
+    height: 470px;
+}
+
+
+/* --------------Carousel Section----------------- */
+
+
+
+
+.carousel-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 100px;
+
+    text-align: center;
+
+    padding: 120px;
+}
+
+.item1{
+    background-color:rgb(231, 228, 225);
+    border-radius: 20px;
+}
+
+
+.img-container{
+    background-color: black; 
+    margin: 0 auto;
+    max-width: 130px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -60px;
+}
+
+.image-div{
+    width: 90px;
+    height: 90px;
+}
+
+.image-div img{
+    height:auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.item1-text-content{
+    line-height: 30px;
+}
+
+.h2-tag h2{
+    margin: 15px auto;
+}
+
+.item1-text-cont{
+    padding: 0 40px 20px 40px;
 }
