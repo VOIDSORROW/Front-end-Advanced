@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI',fontawesome;
 }
 
 *::selection{
@@ -110,35 +110,53 @@
     transform: scale(1.1);
 }
 
+
+/* .menu-home-bar::after{
+    content: "\f0c9";
+    color: orangered;
+    font-size: 25px;
+    font-family: fontawesome;
+} */
+
+
+.menu-bar{
+    display: none;
+}
+
+
+
 /* ----------------Banner--------------- */
 
 
 .banner{
-    
+    display: flex;
     background-image: url(assets/hero-image.jpeg);
     background-size: cover;
+    min-height: 700px;
+    align-items: center;
+
+    background-position: center;
 }
 
 .outer-container{
     display: flex;
     flex-wrap: wrap;
-    height: 650px;
-    align-items: center;
 
 }
 
-.banner-wrapper{
+/* .banner-wrapper{
     margin: 0;
     padding-top: 50px;
-    /* padding-left: 150px; */
-    padding-left: 10%;
-}
+    padding-left: 150px;
+    padding-left: 100px;
+
+} */
+
+
 
 .banner-logo{
-    width: 100%;
-    height: 100%;
-    max-width: 100px;
-    max-height: 100%;
+    height: 60px;
+    /* max-width: 100px; */
 }
 
 .banner-logo img{
@@ -166,14 +184,16 @@
     color: black;
     font-weight: 500;
     text-decoration: none;
+
+    padding-right: 30px;
 }
 
 .banner-button a:before {
     content: "\f061";
     position: absolute;
     top: auto;
-    left: 135px;
-    right: auto;
+    left: auto;
+    right: 0;
     bottom: 0;
     font-family:fontawesome;
 }
@@ -202,7 +222,7 @@
     width: 100%;
     max-width: 1300px;
 
-    padding: 120px 0;
+    padding: 120px 25px;
 
     margin: 0 auto;
 
@@ -212,11 +232,16 @@
 .image-container {
     display: flex;
     flex-wrap: wrap;
+
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .side-image{
     /* padding: 40px; */
-    height: 475px;
+    height: 354px;
 
 }
 
@@ -230,12 +255,13 @@
 .content-container{
     display: flex;
     flex-wrap: wrap;
-    width: 48%;
+    width: 50%;
 }
 
 .text-container{
     line-height: 30px;
     padding: 0 0 0 90px;
+    text-align: justify;
 }
 
 .header-h1{
@@ -293,11 +319,13 @@
     text-align: center;
 
     padding: 120px;
+    align-items: center;
 }
 
 .item1{
     background-color:rgb(231, 228, 225);
     border-radius: 20px;
+    box-shadow: 0 10px 10px -20px rgba(50, 50, 93, .25), 0 30px 60px -30px rgba(0, 0, 0, .3), 0 -18px 60px -10px rgba(0, 0, 0, .025);
 }
 
 
@@ -337,6 +365,103 @@
 
 
 
+/* ---------------------Section-3-------------------- */
+
+
+
+
+.sect3-h2{
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    /* padding-bottom: 50px; */
+}
+
+.para p{
+    padding: 50px 0;
+}
+
+
+.sect3-wrapper{
+    display:block;
+}
+
+
+.sect3-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+
+
+    padding-top: 25px;
+    align-items: center;
+}
+
+.sect3-item1{
+    display: flex;
+}
+
+.image-division{
+    border: 1px solid black;
+    border-radius: 50px;
+
+    width: 45px;
+    height: 45px;
+
+    padding: 10px 10px 0 10px;
+
+    align-items: center;
+
+}
+
+.image-block{
+    height: 30px;
+    width: 25px;
+
+}
+
+.sect3-item1 .image-block img{
+    
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.text-data{
+    padding-left: 20px;
+}
+
+
+.sect3-item1 .text-data h3{
+    color: orangered;
+}
+
+
+
+
+.sect3-h2 h2::after{
+    /* content: "\f061"; */
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+
+    position: absolute;
+    top:auto;
+    left: 0;
+    right: auto;
+    bottom: -16px;
+    font-size: 10px;
+
+    font-family: fontawesome;
+
+
+    border: 4px black;
+}
+
+
 /* -------------Footer---------------- */
 
 footer{
@@ -366,25 +491,6 @@ footer{
 .foot1{
     width: 25%;
     /* background-color: red; */
-    position: relative;
-}
-
-
-.foot2{
-    width: 25%;
-    /* background-color: blue; */
-    position: relative;
-}
-
-.foot3{
-    width: 25%;
-    /* background-color: green; */
-    position: relative;
-}
-
-.foot4{
-    width: 25%;
-    /* background-color: orange; */
     position: relative;
 }
 
@@ -424,3 +530,14 @@ footer{
 
     border-radius: 10px;
 }
+
+
+
+.cont{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding:50px 15px;
+}
+
