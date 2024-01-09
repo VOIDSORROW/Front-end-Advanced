@@ -377,6 +377,21 @@
     /* padding-bottom: 50px; */
 }
 
+
+.sect3-h2:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: auto;
+    top: auto;
+    bottom: -26px;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #eb2d2d;
+    border-radius: 25px;
+}
+
+
 .para p{
     padding: 50px 0;
 }
@@ -444,7 +459,7 @@
 .sect3-h2 h2::after{
     /* content: "\f061"; */
     content: "";
-    width: 100%;
+    width: 550px;
     height: 2px;
     background-color: black;
 
@@ -460,6 +475,23 @@
 
     border: 4px black;
 }
+
+.sect3-h2 h2:before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -20px;
+    left: -185px;
+    right: 0;
+
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+}
+
 
 
 /* -------------Footer---------------- */
@@ -477,13 +509,13 @@ footer{
     text-align: center;
 
     background-color: rgba(144, 94, 71, 0.705);
+
+    padding: 50px 50px 50px 50px;
 }
 
 .foot-wrapper{
     display: flex;
     flex-wrap: wrap;
-
-    padding: 100px 120px 50px 120px;
 
     position: relative;
 }
@@ -492,49 +524,90 @@ footer{
     width: 25%;
     /* background-color: red; */
     position: relative;
+
+    align-items: center;
 }
 
+
 .box1{
+    display: block;
     height: 300px;
     /* border-left: 10px orangered; */
     position: relative;
+    padding-top: 70px;
+    /* border-right: 5px solid black; */
 }
 
 
-/* .box1::before{
-    content: "";
-    position: absolute;
-    top: auto;
-    left: 0;
-    right: auto;
-    bottom: auto;
-    background-color: red;
-
-    height: 100%;
-    width: 6px;
-
-    border-radius: 10px;
-} */
-
-.box2::after{
-    content: "";
-    position: absolute;
-    top: auto;
-    left: auto;
-    right: 0;
-    bottom: auto;
-    background-color: rgba(255, 0, 0, 0.485);
-
-    height: 100%;
-    width: 4px;
-
-    border-radius: 10px;
+.foot1:not(:nth-last-child(1)){
+    border-right: 4px solid orangered;
 }
+
+
+
+.image-spacer{
+    display: flex;
+    padding:0 25px;
+    justify-content: center;
+}
+
+
+.foot-logo{
+    width: 100%;
+    max-width: 500px;
+    /* width: 100%; */
+}
+
+.foot-logo img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.logo1{
+    display: inline-flex;
+    height: 45px;
+    padding: 10px 16px;
+}
+
+
+
+.logo1 img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------Site-Container--------------- */
 
 
 
 .cont{
     max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding:50px 15px;
+}
+
+.foot-cont{
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 
